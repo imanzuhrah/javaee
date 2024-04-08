@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Agenda de Contatos</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="background" href="imagens/agendaimg.jpg">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Cadastre seus Contatos</h1>
+	<a href="index.html" class="Botao1">Voltar</a>
+	<form name="frmContato" action="insert">
+
+		<table>
+			<thead>
+				<tr>
+					<td><input type="text" name="nome" class="Caixa1" size="40"
+						placeholder="Nome"> <br /></td>
+				</tr>
+				<tr>
+					<td><label>Telefone</label> <br> <input type="text"
+						name="fone" class="Caixa00" size="1" placeholder="DDI"> -
+						<input type="text" name="fone2" class="Caixa0" size="5"
+						placeholder="DDD"> - <input type="text" name="fone3"
+						class="Caixa001" size="5" placeholder="xxxxx-xxxx"></td>
+				</tr>
+			</thead>
+			<tr>
+				<td><input type="text" name="email" class="Caixa1" size="40"
+					placeholder="Email (opcional)"> <br /></td>
+			</tr>
+		</table>
+		<input type="submit" class="Botao1" value="Adicionar"
+			onclick="validar()">
+	</form>
+	<script type="text/javascript" src="scripts/validacao.js"></script>
+
+</body>
+</html>
